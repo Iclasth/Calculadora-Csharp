@@ -13,15 +13,48 @@ namespace UtilizandoOperadoresAritimeticos.CalculadoraAritimetica
         {
            Calculadora calculator = new Calculadora();
 
-            calculator.Somar(77, 264);
-            calculator.Subtrair(1910, 543);
-            calculator.Multiplicar(12, 34);
-            calculator.Dividir(36, 4);
-            calculator.Potencia(7, 8);
-            calculator.Seno(60);
-            calculator.Coseno(45);
-            calculator.Tangente(90);
-            calculator.RaizQuadrada(144);
+            Console.WriteLine("Calculadora Aritmética");
+            Console.WriteLine("Digite o primeiro número:");
+            int n1 = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Digite o segundo número:");
+            int n2 = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Escolha a operação: +, -, *, /, %, **, seno, cosseno, tangente");
+            string operacao = Console.ReadLine();
+
+            switch (operacao){
+                case "+":
+                    calculator.Somar(n1, n2);
+                    break;
+                case "-":
+                    calculator.Subtrair(n1, n2);
+                    break;
+                case "*":
+                    calculator.Multiplicar(n1, n2);
+                    break;
+                case "/":
+                    calculator.Dividir(n1, n2);
+                    break;
+                case "%":
+                    calculator.Modular(n1, n2);
+                    break;
+                case "**":
+                    calculator.Potencia(n1, n2);
+                    break;
+                case "seno":
+                    calculator.Seno(n1);
+                    break;
+                case "cosseno":
+                    calculator.Coseno(n1);
+                    break;
+                case "tangente":
+                    calculator.Tangente(n1);
+                    break;
+                default:
+                    Console.WriteLine("Digite, por favor, uma operação válida.");
+                    break; 
+
+
+            }
         }
     }
 }
