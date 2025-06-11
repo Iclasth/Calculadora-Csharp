@@ -32,7 +32,7 @@ namespace CalculadoraAritimetica
                 Console.WriteLine("Divisão por zero não é permitida.");
                 return;
             }
-            Console.WriteLine($"{n1} % {n2} = {n1 % n2}")
+            Console.WriteLine($"{n1} % {n2} = {n1 % n2}");
         }
         public void Potencia(int n1, int n2)
         {
