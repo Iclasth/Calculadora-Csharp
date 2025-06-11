@@ -1,0 +1,24 @@
+# .gitignore para projeto C# com Visual Studio
+# Build folders
+bin/
+obj/
+
+# Visual Studio
+.vs/
+*.user
+*.suo
+
+# Arquivos temporários e do sistema
+*.log
+*.DS_Store
+Thumbs.db
+
+# Configurações de build
+*.cache
+*.dbmdl
+*.VC.db
+*.vscode/
+
+# Arquivos gerados
+Generated\ Files/
+
