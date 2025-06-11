@@ -25,6 +25,15 @@ namespace CalculadoraAritimetica
             }
             Console.WriteLine($"{n1} / {n2} = {n1 / n2}");
         }
+        public void Modular(int n1, int n2)
+        {
+            if (n2 == 0)
+            {
+                Console.WriteLine("Divisão por zero não é permitida.");
+                return;
+            }
+            Console.WriteLine($"{n1} % {n2} = {n1 % n2}")
+        }
         public void Potencia(int n1, int n2)
         {
             if (n1 < 0 && n2 % 2 == 0)
